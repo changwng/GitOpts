@@ -9,8 +9,8 @@ pipeline {
     }      
     stage('git pull') {
       steps {
-        // Git-URL will replace by sed command before RUN
-        git url: 'Git-URL', branch: 'main'
+        // https://github.com/Woong-For-Mohani/GitOpts.git will replace by sed command before RUN
+        git url: 'https://github.com/Woong-For-Mohani/GitOpts.git', branch: 'main'
       }
     }
     stage('k8s deploy'){
